@@ -121,8 +121,8 @@ function loop() {
   // check if the snake ate himself
   for(let i = 0; i < snake.length - 1; i++) {
     let point = snake[i]
-      if(head.x === point.x && if (head.y) === point.y)
-        resetSnake()
+    if(head.x === point.x && head.y === point.y) {
+      resetSnake()
     }
   }
 
@@ -132,7 +132,8 @@ function loop() {
   drawSnake()
   drawCircle(apple.x,apple.y)
 
- setTimeout(() => loop (),100)
+  setTimeout(() => loop (),100)
+}
 
  loop ()
 
